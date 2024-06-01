@@ -19,7 +19,7 @@ public class UserController {
     }
 
     // Get a Single User by Id
-    @GetMapping("/{userId}")
+    @GetMapping("/user/{userId}")
     public Optional<User> getUserById(@PathVariable("userId") int userId) {
         System.out.println("UserController.getUserById");
         return userService.getUserById(userId);

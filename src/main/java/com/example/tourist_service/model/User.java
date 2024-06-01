@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 @Table(name="user")
 public class User {
     @Id
-    private int id;
+    private int id;//primary_key
     private String name;
     private String email;
     private String phNo;
